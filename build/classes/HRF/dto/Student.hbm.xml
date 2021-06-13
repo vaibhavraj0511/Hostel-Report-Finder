@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="HRF.dto">
+    <class name="Student" table="studenttab">
+        <id name="id" column="studentid"/>
+        <property name="fullName" column="studentname"/>
+        <property name="password" column="studentpassword"/>
+        <property name="email" column="studentemail"/>
+        <property name="dateOfBirth" column="studentdob"/>
+        <property name="fatherName" column="studentfathername"/>
+        <property name="motherName" column="studentmothername"/>
+        <property name="parentMobileNo" column="parentmobileno"/>
+        <property name="studentMobileNo" column="studentmobileno"/>
+        <property name="address" column="studentaddress"/>
+    </class>
+</hibernate-mapping>

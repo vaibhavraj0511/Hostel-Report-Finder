@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="HRF.dto">
+    <class name="Parents" table="parentstab">
+        <id name="id" column="parentsid"/>
+        <property name="studentFatherName" column="studentfathername"/>
+        <property name="studentMotherName" column="studentmothername"/>
+        <property name="password" column="parentspassword"/>
+        <property name="email" column="parentsemail"/>
+        <property name="fatherMobileNo" column="fathermobileno"/>
+        <property name="motherMobileNo" column="mothermobileno"/>
+        <property name="address" column="parentsaddress"/>
+    </class>
+</hibernate-mapping>

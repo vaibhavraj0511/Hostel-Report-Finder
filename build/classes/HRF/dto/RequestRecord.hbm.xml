@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="HRF.dto">
+    <class name="RequestRecord" table="requestrecordtab">
+        <id name="uniqueIdd" column="requestid"/>
+        <property name="studentName" column="studentname"/>
+        <property name="studentId" column="studentid"/>
+        <property name="mobileNo" column="requestmobileno"/>
+        <property name="date" column="requestdate"/>
+        <property name="day" column="requestday"/>
+        <property name="fromTime" column="requestfromtime"/>
+        <property name="toTime" column="requesttotime"/>
+        <property name="updateDescription" column="updatedescription"/>
+    </class>
+</hibernate-mapping>
